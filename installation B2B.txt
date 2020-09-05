@@ -1,0 +1,64 @@
+install postgresql version-10.14
+https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+
+install github desktop
+send ur githb id on whatsapp 8625889552
+clone B2B in documents\github\
+
+open cmd terminal
+C:\Users\AJEET>mkdir project
+C:\Users\AJEET>cd project
+C:\Users\AJEET\project>python -m venv venv
+C:\Users\AJEET\project>cd venv
+C:\Users\AJEET\project\venv>scripts\activate
+(venv) C:\Users\AJEET\project\venv>pip install django-jet django-smart_selects django-colorfield django-qr_code django-import_export django-sslserver django-mptt django-crispy_forms
+
+(venv) C:\Users\AJEET\project\venv>pip install django==2 numpy pyzbar pillow xhtml2pdf filetype nltk pytesseract opencv-python pdfminer3 pycryptodome razorpay psycopg2
+
+
+
+open psql from start menu
+	
+	CREATE DATABASE movintrendz;
+	CREATE DATABASE local_movintrendz;
+	CREATE USER b2badmin WITH PASSWORD 'shekharb2b';
+	ALTER ROLE b2badmin SET client_encoding TO 'utf8';
+	ALTER ROLE b2badmin SET default_transaction_isolation TO 'read committed';
+	GRANT ALL PRIVILEGES ON DATABASE movintrendz TO b2badmin;
+	GRANT ALL PRIVILEGES ON DATABASE local_movintrendz TO b2badmin;
+	\q
+
+copy documents\github\B2B to project\venv\B2B
+(venv) C:\Users\AJEET\project\venv>cd B2B
+(venv) C:\Users\AJEET\project\venv\B2B>
+
+edit B2B\movintrendz\setting.py in vscode 
+
+rename database name movintrendz to local_movintrendz 
+(venv) C:\Users\AJEET\project\venv\B2B>python manage.py migrate
+					python manage.py migrate --run-syncdb
+					python manage.py shell
+
+					>>> from django.contrib.contenttypes.models import ContentType
+					>>> ContentType.objects.all().delete()
+					>>> quit()
+
+					python manage.py loaddata db.json
+					python manage.py runserver
+
+
+
+
+login all ids and explore then contact
+
+django admin
+justgetit.co.in@gmail.com   pw shekhar
+
+brand   raymond@raymond.in
+vendor   asmgarment@gmail.com
+staff yogita@raymond.in
+vegi@gmail.com
+consumer1@gmail.com
+electronics@mail.com
+
+pw for all raymond
